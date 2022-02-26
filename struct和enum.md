@@ -329,3 +329,22 @@ fn main(){
   }
 }
 ```
+
+### if let 模式匹配
+
+>`if let`只关心一种匹配模式而忽略其它匹配的情况(放弃了穷举的可能)
+
+* `if let`匹配模式还可以搭配else使用
+
+```rs
+let v = Some(0_u8);
+match v {
+  Some(1) => println!("one"),
+  _ => println!("other"),
+}
+if let Some(1) = v {
+  println!("one");
+}else {
+    println!("other");
+}
+```
