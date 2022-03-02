@@ -52,7 +52,7 @@ struct Color (i32, i32, i32);
 let black = Color(0,0,0)
 ```
 
-### Unit-Like Struct(没有任何字段)
+### Unit-Like Struct
 
 * 可以定义没有任何字段的struct,叫做Unit-Like Struct(与(),单元类型类似)
 * 适用于需要在某个类型上实现某个`trait`,但是在里面有没有任何想要存储的数据
@@ -85,7 +85,7 @@ struct User {
   * `{:?}`
   * `{:#?}`
 
-### struct方法
+### struct methods
 
 * 方法和函数雷系,fn关键字,名称,参数,返回值
 * 方法和函数的不同之处
@@ -167,7 +167,7 @@ impl Rectangle{}
 impl Rectangle{}
 ```
 
-## 枚举enum
+## enum
 
 >rust中tuple,struct,tuple struct代表的是多个类型**与**的关系,那么enum更像是多个类型**或**的关系
 
@@ -233,7 +233,7 @@ q.call();
 ...
 ```
 
-### Option枚举
+### Option(enum)
 
 >rust中没有null:null的问题就是当你尝试使用非null那样使用null值的时候,就会引起某种错误
 
@@ -265,7 +265,7 @@ let x= 7;
 //let w =y+x;//这样使用会报错
 ```
 
-## match
+### match
 
 >允许一个值与一系列模式进行匹配,并执行匹配成功的模式对应的代码
 
@@ -330,7 +330,7 @@ fn main(){
 }
 ```
 
-### if let 模式匹配
+### if let
 
 >`if let`只关心一种匹配模式而忽略其它匹配的情况(放弃了穷举的可能)
 
