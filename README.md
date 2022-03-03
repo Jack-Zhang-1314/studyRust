@@ -19,3 +19,9 @@
 ## [package&Crate&Module](package&Crate&Module.md)
 
 * [rust的代码组织](package&Crate&Module.md#rust%E7%9A%84%E4%BB%A3%E7%A0%81%E7%BB%84%E7%BB%87)
+
+## [集合](集合.md)
+
+* [Vector](集合.md#vector)
+* [String](集合.md#string)
+* [HashMap](集合.md#hashmapkv)
