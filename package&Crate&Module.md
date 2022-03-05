@@ -192,7 +192,7 @@ pub fn eat_at_restaurant() {
 * 使用use指定相对路径
 
 ```rs
-use use first_of_house::hosting;
+use first_of_house::hosting;
 ```
 
 > 使用use

@@ -43,6 +43,12 @@ let use2 = User{
 
 * 这样没有使用use1更新的会和use1不同,使用use1更新的字段会和use1相同
 
+* 同时也可以忽略其它参数
+
+```rs
+Point3 {x, ..} => println!("{}", x)
+```
+
 ### tuple struct
 
 >类似于tuple struct两者的混合.区别在于他们的成员没有名字
@@ -95,7 +101,7 @@ struct User {
 >定义方法
 
 1. 在impl块离定义方法
-2. 方法的第一个参数可以是`&self`,也可以获得其所有权或课变借用,和其它参数一样
+2. 方法的第一个参数可以是`&self`(实际上是`self:&Self`的缩写),也可以获得其所有权或课变借用,和其它参数一样
 
 ```rs
 impl Rectangle {
@@ -111,6 +117,8 @@ fn main(){
   println!("{}", rect.area());
 }
 ```
+
+* 这个impl块中所有的内容都将与`Rectangle`类型相关联.施一公`&self`来替代`self:&Rectangle`
 
 > 方法调用的运算符
 

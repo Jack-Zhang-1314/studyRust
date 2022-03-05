@@ -56,7 +56,7 @@ Set http_proxy=http://127.0.0.1:1080 && Set https_proxy=http://127.0.0.1:1080
 
 >声明变量使用let关键词.并且默认情况下是不可变的(immutable)
 
-* 使用`mut`关键词,使变量可变`let nut x = 5`
+* 使用`mut`关键词,使变量可变`let mut x = 5`
 
 >常量(constant),常量在绑定值之后是不可变的,但是他与不可变的变量右很多区别
 
