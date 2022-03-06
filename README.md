@@ -1,29 +1,34 @@
 # rust
 
-## [变量,函数,所有权等](rust.md)
+## [变量,函数,所有权等](01rust.md)
 
-## [struct,enum等](struct和enum.md)
+## [struct,enum等](02struct和enum.md)
 
-### [struct](struct和enum.md#struct)
+### [struct](02struct和enum.md#struct)
 
-* [tuple struct](struct和enum.md#tuple-struct)
-* [Unit-Like Struct(没有任何字段)](struct和enum.md#unit-like-struct)
-* [struct 方法](struct和enum.md#struct-methods)
+* [tuple struct](02struct和enum.md#tuple-struct)
+* [Unit-Like Struct(没有任何字段)](02struct和enum.md#unit-like-struct)
+* [struct 方法](02struct和enum.md#struct-methods)
 
-### [枚举](struct和enum.md#enum)
+### [枚举](02struct和enum.md#enum)
 
-* [Option](struct和enum.md#optionenum)
-* [match](struct和enum.md#match)
-* [if let](struct和enum.md#if-let)
+* [Option](02struct和enum.md#optionenum)
+* [match](02struct和enum.md#match)
+* [if let](02struct和enum.md#if-let)
 
-## [package&Crate&Module](package&Crate&Module.md)
+## [package&Crate&Module](03package&Crate&Module.md)
 
-* [rust的代码组织](package&Crate&Module.md#rust%E7%9A%84%E4%BB%A3%E7%A0%81%E7%BB%84%E7%BB%87)
+* [rust的代码组织](03package&Crate&Module.md#rust%E7%9A%84%E4%BB%A3%E7%A0%81%E7%BB%84%E7%BB%87)
 
-## [集合](集合.md)
+## [集合](04集合.md)
 
-* [Vector](集合.md#vector)
-* [String](集合.md#string)
-* [HashMap](集合.md#hashmapkv)
+* [Vector](04集合.md#vector)
+* [String](04集合.md#string)
+* [HashMap](04集合.md#hashmapkv)
 
-## [错误处理](错误处理.md)
+## [错误处理](05错误处理.md)
+
+* [panic](05错误处理.md#panic)
+  * [use panic](05错误处理.md#use-panic)
+* [Result](05错误处理.md#result)
+
