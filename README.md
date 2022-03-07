@@ -32,3 +32,8 @@
   * [use panic](05错误处理.md#use-panic)
 * [Result](05错误处理.md#result)
 
+## [泛型,trait,生命周期](06泛型,trait-生命周期.md)
+
+* [泛型](06泛型,trait-生命周期.md#泛型)
+* [Trait](06泛型,trait-生命周期.md#trait)
+* [生命周期](06泛型,trait-生命周期.md#生命周期)
