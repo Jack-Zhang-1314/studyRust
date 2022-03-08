@@ -61,7 +61,7 @@ Set http_proxy=http://127.0.0.1:1080 && Set https_proxy=http://127.0.0.1:1080
 >常量(constant),常量在绑定值之后是不可变的,但是他与不可变的变量右很多区别
 
 1. 不可以使用mut
-2. 声明常量使用mut关键字,他的类型必须被标注
+2. 声明常量使用mut关键字,他的**类型必须被标注**
 3. 常量可以在任何作用域内进行声明,包括全局
 4. 常量只绑定到常量表达式,无法绑定到函数的调用结果只能在运行时才能计算出的值
 
@@ -612,3 +612,35 @@ let whole = &s[..];
 let a = [1,2,3,4,5];
 let slice = &a[1..3];
 ```
+
+>范围操作符:Rust支持范围操作符,有以下几种表示范围的操作符
+
+| 范围表达式  | 类型                       | 表示的范围      |
+| ----------- | -------------------------- | --------------- |
+| start..end  | std::ops::Range            | start ≤ x < end |
+| start..     | std::ops::RangeFrom        | start ≤ x       |
+| ..end       | std::ops::RangeTo          | x < end         |
+| ..          | std::ops::RangeFull        | -               |
+| start..=end | std::ops::RangeInclusive   | start ≤ x ≤ end |
+| ..=end      | std::ops::RangeToInclusive | x ≤ end         |
+
+```rs
+let arr = [11, 22, 33, 44, 55];
+let s1 = &arr[0..3];    // [11,22,33]
+let s2 = &arr[1..=3];   // [22, 33, 44]
+let s3 = &arr[..];      // [11, 22, 33, 44, 55]
+```
+
+> slice类型常用的方法
+
+| 方法          | 描述                                            |
+| ------------- | ----------------------------------------------- |
+| len()         | 取slice元素个数                                 |
+| is_empty()    | 判断slice是否为空                               |
+| contains()    | 判断是否包含某个元素                            |
+| repeat()      | 重复slice指定次数                               |
+| reverse()     | 反转slice                                       |
+| join()        | 将各元素压平(flatten)并通过指定的分隔符连接起来 |
+| swap()        | 交换两个索引处的元素，如s.swap(1,3)             |
+| windows()     | 以指定大小的窗口进行滚动迭代                    |
+| starts_with() | 判断slice是否以某个slice开头                    |

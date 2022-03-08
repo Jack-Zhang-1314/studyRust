@@ -175,6 +175,12 @@ impl Rectangle{}
 impl Rectangle{}
 ```
 
+> 方法的简写形式
+
+* `fn f(self)`相当于`fn f(self: Self)`:当obj.f()时,转移obj的所有权,调用f方法之后,obj将无效
+* `fn f(&self)`相当于`fn f(self: &Self)`:当obj.f()时,借用而非转移obj的只读权,方法内部不可修改obj的属性,调用f方法之后,obj依然可用
+* `fn f(&mut self)`相当于`fn f(self: &mut Self)`:当obj.f()时,借用obj的可写权,方法内部可修改obj的属性,调用f方法之后,obj依然可用
+
 ## enum
 
 >rust中tuple,struct,tuple struct代表的是多个类型**与**的关系,那么enum更像是多个类型**或**的关系
