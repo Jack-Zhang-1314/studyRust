@@ -22,7 +22,7 @@
   * library:库类型的Crate
 * Crate Root
   * 源代码文件
-  * Rust编译从这里开,始组成你的Crate的根Module
+  * Rust编译从这里开,开始组成你的Crate的根Module
 * 一个Package
   * 包含一个`Cargo.toml`,描述了如何构建这些Crates
   * 只能包含0-1个`library crate`
