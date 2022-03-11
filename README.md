@@ -43,3 +43,9 @@
 * [test简介](07测试.md#测试)
 * [断言](07测试.md#断言)
 * [控制测试如何运行](07测试.md#控制测试如何运行)
+
+## [发布crate](09发布crate.md)
+
+* [发布](09发布crate.md#发布cratehttpscratesio)
+* [代码空间](09发布crate.md#cargo工作空间workspace)
+* [cargo install](09发布crate.md#cargo-install)
