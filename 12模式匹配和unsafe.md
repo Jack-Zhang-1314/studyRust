@@ -777,6 +777,8 @@ fn return_closure() -> Box<dyn Fn(i32) -> i32> {
 }
 ```
 
+* `Fn trait`继承自`FnMut trait`，`FnMut trait`又继承自`FnOnce trait`
+ 
 ## 宏macro
 
 * 宏在Rust里指的是一组相关特性的集合称谓
