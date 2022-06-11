@@ -52,6 +52,16 @@ Set http_proxy=http://127.0.0.1:1080 && Set https_proxy=http://127.0.0.1:1080
 
 * rust团队提供的库:<https://crates.io/>
 
+> rust错误解决
+
+1. **cargo-eait**
+   * [`Clean updating the crates.io index sets 'refs/remotes/origin/' to HEAD insted of master`](https://github.com/killercup/cargo-edit/issues/411)
+
+   ```bash
+   mv ~/.cargo/registry/index/github.com-*/.git/refs/remotes/origin/HEAD \
+   ~/.cargo/registry/index/github.com-*/.git/refs/remotes/origin/master
+   ```
+
 ## 变量与常量
 
 >声明变量使用let关键词.并且默认情况下是不可变的(immutable)
